@@ -28,7 +28,7 @@ and binary predicates (topological relations):
 > dispersed in (/), included within (@), superposed on (σ), bicontinuous with (×) and in addition to (+)
 
 The `+` operator can be understood as a ternary operator - in relational algebra this would be the case `R(xyz)` - as it always relates some `x` and `y` to a `z`.
-For example, `(x + y)/z` signifies that the fitst two phases in the formula are not topologically related
+For example, `(x + y)/z` signifies that the first two phases in the formula are not topologically related
 to each other but bear a topological relation to a common `z`, in this case by their both being dispersed in
 that phase.
 
@@ -63,9 +63,11 @@ was itself contained within a shell of some aqueous material we could write:
 I consider there to be two distinct uses of DSF:
 
 **Analytical**
+
 The formalism is a simple and efficient method of describing systems that are difficult to describe in plain language.
 
 **Generative**
+
 The formalism is a rare example of a method for procedurally generating food structures.
 
 This simple web app focuses on a limited implementation of the latter.
@@ -108,6 +110,7 @@ of DSF are:
 - [ ] Consider alternative syntax (Polish notation to reduce ambiguity)
 - [ ] Associate each generated formula with a recipe suggestion
 - [ ] Compress media files
+- [ ] Add academic references
 - [ ] Apologise to all programmers for my bad habits
 
 ## Contributions
