@@ -31,7 +31,7 @@ let pickMiddle = connects[rndInt(max)];
 
 //create a number of random atoms
 let many = [];
-let atom_number = 3;
+let atom_number = 4;
 let atom_number_c = 5;
 
 function giveMeThings(count = 3){
