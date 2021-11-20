@@ -1,7 +1,7 @@
 # disperse
 Procedural food structure generator based on the Dispersed System Formalism
 
-![Microscopic image of an aqueous foam (G/W)](assets/foam.jpg)
+![Microscopic image of an aqueous foam (G/W)](assets/foam.jpg "Micrograph of shaving foam by edibotopic")
 
 ---
 
@@ -51,7 +51,7 @@ of discovery. For example, for `W` and `S` we could have:
  S_n = ...
  ```
 
-![3D visualisation of the topological relations](assets/3d_dsf.png)
+![3D visualisation of the topological relations](assets/3d_dsf.png "Each operator expresses a binary topological relation between phases")
 
 ## Purpose
 DSF is an expansion of the common practice in physico-chemical sciences of describing an emulsion of oil in water as:
