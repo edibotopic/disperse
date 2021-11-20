@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disperse: Procedural Food Structures</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <h1>Disperse</h1>
+
+    <h2>Make binary formulas</h2>
+    
+    <button type="button" id="rndButton1">Randomise</button>
+    
+    <br> <br>
+        <p id="rnd2"><br></p>
+
+    <hr>
+
+    <h2>Make ternary formulas</h1>
+    
+    <button type="button" id="rndButton2">Randomise</button>
+    
+    <br> <br>
+
+    <p id="rnd3"><br></p>
+    
+    <hr>
+    
+    <h2>Read More: <br><br><strong>Dispersed System Formalism (DSF)</strong></h2>
+
+    <blockquote>DSF was developed by the scientist Hervé This
+        as a method to describe food systems based on
+        their constituent phases.
+
+        <br><br>
+        &#129371 = O/W
+        <br>
+        (oil/water dispersion).
+        <br><br>  
+
+        
+        This webpage uses
+        pseudo-random number generators to suggest
+        DSF formulas containing the following food phases: 
+        <br><br>
+        <small>
+            <li>gas (G)</li>
+            <li>oil (O)</li>
+            <li>solid (S)</li>
+            <li>water (W)</li>
+        </small>
+ 
+        <br><br>
+        The phases are associated topologically by a set of operators.
+        Here, the operators used are:
+        <br><br>
+            <small>
+                <li><i>dispersed in</i> (/)</li>
+                <li><i>included in</i> (@)</li>
+                <li><i>superposed on</i> (σ)</li>
+                <li><i>bicontinuous with</i> (×)</li>
+                <li><i>in addition to</i> (+)</li>
+            </small>
+
+        <br><br>
+        In the original DSF papers an algorithm written with the proprietary software Maple was presented
+        to generate lists of valid DSF formulas. <a href="https://github.com/edibotopic/disperse"><span style="font-family: Frijole; color: #13cffe;">disperse</span></a> is written in 
+        javascript and is designed to provide a more convenient method of procedurally 
+        generating food formulas in the browser for free.
+
+        <br><br>
+
+        For more background visit the Github page for <a href="https://github.com/edibotopic/disperse"><span style="font-family: Frijole; color: #13cffe;">disperse</span></a>
+    </blockquote>
+
+    <br>
+
+    <small style="font-family: Frijole; color: white;">©2021, Shane V. Crowley (under MIT license) </small>
+    
+
+    
+    <script type="text/javascript" src="src/test.js"></script>
+
+</body>
+</html>
