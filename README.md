@@ -93,12 +93,14 @@ The inclusion of each phase presents various opportunities:
 
 ## Limitations
 This app is not a full implementation of the ideas presented in the DSF literature.
-THe inclusion of quantiative data in a formula, such as the proportion of each material and/or
+The inclusion of quantiative data in a formula, such as the proportion of each material and/or
 the volume fraction occupied by a phase, have been proposed. In my view, the primary novelties
 of DSF are:
 
 1. The effective description of multi-phasic structures on the basis of topological relations alone
 2. The opportunity to procedurally generate concept food structures
+
+This implementation (and any future versions) will focus on these aspects.
 
 ## To-do
 - [x] Publish initial version of app
