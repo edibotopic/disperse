@@ -9,12 +9,12 @@
 //create an array of the phases
 phases = ['G','O','W','S'];
 for(p=0;p<phases.length;p++){
-    console.log(phases[p]);
+    // console.log(phases[p]);
 };
 //create an array of connectives
 connects = ['/','@','×','σ','+'];
 for(c=0;c<(phases.length+1);c++){
-    console.log(connects[c]);
+    // console.log(connects[c]);
 };
 //generate random integer between 0 and 5
 let max = 5;
