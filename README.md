@@ -14,6 +14,7 @@ DSF is a semi-formal language developed for describing multi-phase systems.
 - [applications](#applications)
 - [use-case](#use-case)
 - [limitations](#limitations)
+- [references](#references)
 - [to-do](#to-do)
 
 ---
@@ -36,6 +37,19 @@ Parentheses are used to disambiguate the resultant formula, such that `(G+O)/W` 
 The web app will simply return `G+O/W` and leave it to the user to define the formula further. Implementing
 parentheses in the code would likely be awkward. It would be preferable to use pre- or post-fix notation to
 make this implementation more trivial (at least for my abilities) but this would be at the cost of human readability.
+
+When the same object appears in direct relation to itself, such as in `W/W/G`, the formula can generally be reduced (`w/G`) unless
+it is understood that each symbolises a different kind of that object. The resolution of such cases is particular to the context
+of discovery. For example, for `W` and `S` we could have:
+
+ ```math
+ W_1 = salt solution
+ W_2 = syrup droplets
+ W_n = ...
+ S_1 = solid body
+ S_2 = solid fragments
+ S_n = ...
+ ```
 
 ![3D visualisation of the topological relations](assets/3d_dsf.png)
 
@@ -70,7 +84,10 @@ The formalism is a simple and efficient method of describing systems that are di
 
 The formalism is a rare example of a method for procedurally generating food structures.
 
-This simple web app focuses on a limited implementation of the latter.
+This simple web app focuses on a limited implementation of DSF as a **generative** tool.
+It is a starting point for generating *multi-phase structures* (food or otherwise), broadly defined as:
+
+> A system consisting of at least two distinct phases that are topologically related in space
 
 ## Use-case
 Imagine you are tasked with developing a new food product. You generate a formula as follows:
@@ -101,6 +118,10 @@ of DSF are:
 2. The opportunity to procedurally generate concept food structures
 
 This implementation (and any future versions) will focus on these aspects.
+
+## References
+
+*to be completed*
 
 ## To-do
 - [x] Publish initial version of app
