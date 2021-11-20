@@ -1,7 +1,7 @@
 # disperse
 Procedural food structure generator based on the Dispersed System Formalism
 
-![Microscopic image of an aqueous foam (G/W)](https://github.com/edibotopic/disperse/assets/blob/foam.jpg)
+![Microscopic image of an aqueous foam (G/W)](assets/foam.jpg)
 
 ---
 
@@ -37,7 +37,7 @@ The web app will simply return `G+O/W` and leave it to the user to define the fo
 parentheses in the code would likely be awkward. It would be preferable to use pre- or post-fix notation to
 make this implementation more trivial (at least for my abilities) but this would be at the cost of human readability.
 
-![3D visualisation of the topological relations](https://github.com/edibotopic/disperse/assets/blob/3d_dsf.png)
+![3D visualisation of the topological relations](assets/3d_dsf.png)
 
 ## Purpose
 DSF is an expansion of the common practice in physico-chemical sciences of describing an emulsion of oil in water as:
