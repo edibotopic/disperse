@@ -91,7 +91,7 @@ was itself contained within a shell of some aqueous material we could write:
 
 ## Applications
 
-There to be two distinct uses of DSF:
+There is two distinct uses of DSF:
 
 ### Analytical
 
