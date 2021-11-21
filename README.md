@@ -145,16 +145,16 @@ When scrolling on an Android device the background colour (purple tint) momentar
 - [x] Publish initial version of app
 - [x] Compress media files
 - [x] Give example food formulas
-- [x] Give example non-food formulas
+- [ ] Give example non-food formulas
 - [x] Fix folder structure
-- [ ] Clean up function and variable names
-- [ ] Add quaternary systems (if only for ice cream)
-- [ ] Add illustrated examples of predicates
+- [ ] Refactor function/variable names
+- [ ] Add quaternary generator (if only for ice cream)
+- [x] Add illustrated examples of predicates
 - [ ] Improve mobile UX
 - [ ] Complete description of DSF in readme
-- [ ] Consider alternative syntax (Polish notation)
-- [ ] Associate generated formula with recipe suggestion
-- [ ] Add academic references
+- [ ] Add infix-postfix converter (disambiguation)
+- [ ] Associate formulas w/ recipe and/or emojis
+- [ ] Add academic references for DSF
 - [ ] Apologise to all programmers for my bad habits
 
 ## Contributions
