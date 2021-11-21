@@ -128,7 +128,7 @@ The inclusion of each phase presents various opportunities:
 
 ## Limitations
 
-This app is not a full implementation of the ideas presented in the DSF literature. Some authors have suggested how quantitative data can be included in the formula. However, my view is that the primary novelty of DSF is as a *qualitative tool* that can generate *possible structures*.
+This app is not a full implementation of the ideas presented in the DSF literature. Some authors have suggested how quantitative data can be included in the formulas. However, my view is that the primary novelty of DSF is as a *qualitative tool* that can generate *possible structures*.
 
 This implementation (and any future versions) will focus on these aspects of DSF.
 
@@ -144,8 +144,8 @@ When scrolling on an Android device the background colour (purple tint) momentar
 
 - [x] Publish initial version of app
 - [x] Compress media files
-- [x] Give example food formula
-- [x] Give example non-food formula
+- [x] Give example food formulas
+- [x] Give example non-food formulas
 - [x] Fix folder structure
 - [ ] Clean up function and variable names
 - [ ] Add quaternary systems (if only for ice cream)
