@@ -91,7 +91,7 @@ was itself contained within a shell of some aqueous material we could write:
 
 ## Applications
 
-There is two distinct uses of DSF:
+There are two distinct uses of DSF:
 
 ### Analytical
 
@@ -146,15 +146,16 @@ When scrolling on an Android device the background colour (purple tint) momentar
 - [x] Compress media files
 - [x] Give example food formulas
 - [ ] Give example non-food formulas
-- [x] Fix folder structure
-- [ ] Refactor function/variable names
+- [x] Fix directory structure
+- [x] Refactor function/variable names
 - [ ] Add quaternary generator (if only for ice cream)
 - [x] Add illustrated examples of predicates
-- [ ] Improve mobile UX
+- [ ] Improve mobile UX and fix bugs
+- [ ] Create a simple logo
 - [ ] Complete description of DSF in readme
 - [ ] Add infix-postfix converter (disambiguation)
-- [ ] Associate formulas w/ recipe and/or emojis
-- [ ] Add academic references for DSF
+- [ ] Link generated formulas w/ examples (emojification)
+- [ ] Add academic references for DSF (Hervé's papers)
 - [ ] Apologise to all programmers for my bad habits
 
 ## Contributions

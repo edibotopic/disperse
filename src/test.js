@@ -1,37 +1,47 @@
 //******************************************/
-// ©2021 edibotopic (MIT license) 
+// ©2021 edibotopic (MIT license)
 //******************************************/
 
 // let document;
 
-//create an array of phases
+//create an array of phases (may give user option to expand)
+
 phases = ['G','O','W','S'];
-for(p=0;p<phases.length;p++){
-    console.log("Phases in use:"+""+phases);
-};
+console.log("Phases in use:"+" "+phases);
 
-//create an array of connectives
+//create an array of connectives (may give user option to expand)
+
 connects = ['/','@','×','σ','+'];
-for(c=0;c<(connects.length);c++){
-    console.log("Connectives in use:"+""+connects);
-};
+console.log("Connectives in use:"+" "+connects);
 
-//generate random integer between 0 and 5
-let max = 5;
+//list cartesian product of binary pairs (4^2) for reference
+phases_paired = ['G','O','W','S'];
+
+function pairs(){
+    console.log("Possible binary pairs (4^2):")
+    for (let p=0; p<phases.length;p++){
+        for (let s=0; s<phases_paired.length;s++){
+            console.log(phases[p], phases_paired[s]);
+        }
+    }
+};
+pairs();
+
+//generate random integer
 function rndInt(max){
     return Math.floor(Math.random()*max);
 };
 
 //inputs for random number generators
-let many = [];
-let max_p1 = 4;
-let max_c1 = 5;
-let max_p2 = 4;
-let max_c2 = 5;
+let empty = [];
+let max_p1 = phases.length;
+let max_c1 = connects.length;
+let max_p2 = phases.length;
+let max_c2 = connects.length;
 
 //function to create binary DSF formula with infix notation
 function makeBinaryFormula(count = 3){
-    while(many.length<count){
+    while(empty.length<count){
         let operand_left1 = phases[rndInt(max_p1)];
         let operand_right1 = phases[rndInt(max_p1)];
         let connective_infix1 = connects[rndInt(max_c1)];
@@ -49,7 +59,7 @@ document.getElementById("binary_generator").addEventListener("click", function()
 
 //function to create ternary DSF formula with infix notation
 function makeTernaryFormula(count = 2){
-    while(many.length<count){
+    while(empty.length<count){
         let operand_left1 = phases[rndInt(max_p1)];
         let operand_right1 = phases[rndInt(max_p1)];
         let connective_infix1 = connects[rndInt(max_c1)];
