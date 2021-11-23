@@ -1,0 +1,64 @@
+Plan: associate each DSF formula with a representative emoji...
+
+possible_pairs = [
+    G G
+    G O
+    G W
+    G S
+
+    O G
+    O O
+    O W
+    O S
+
+    W G
+    W O
+    W W
+    W S
+
+    S G
+    S O
+    S W
+    S S
+];
+
+---
+
+Numbers: quite a few combinations
+
+4^2 = 16 possible pairs for relation (R)
+16*5 = 80 possible pairs with 5 predicates
+
+Some combinations are redundant (e.g., W/W = W,  S + O = {} )
+
+So real n < 80
+
+---
+
+Emojis: examples might include...
+
+emojis = [
+    gas_only = 🔳;
+    liquid_foam = 🍺;
+    solid_foam = 🍞;
+    oil_only = 🛢;
+    aerosol = ☁;
+    water_oil = 🧈;
+    oil_water = 🥛;
+    water_only = 🍷;
+    gel_stat = 🧀;
+    gel_dyna = 🥝;
+    solid_only = 🧊;
+    solid_bulk = 🧂;
+
+]
+
+---
+
+Examples:
+
+W/W = 🍷 (water only as ethanol is not dissolved rather than suspended)
+W/S = 🧀 (a gel such as cheese, with water dispersed in a solid matrix)
+w/s/w = 🧀/🍷 (gelled particles dispersed in a an aqueous dispersant)
+
+---

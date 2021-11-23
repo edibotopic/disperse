@@ -87,11 +87,11 @@ document.getElementById("ternary_generator").addEventListener("click", function(
 }
 );
 
+//todo: generate food emoji per binary formula/atom (see notes/dsf_emoji.txt)
 
 //todo: create infix -> postfix converter
 
 //todo: add quaternary generator
 
-//todo: generate food emoji per binary formula/atom 🍧🧀🍷
 
 //********************************************************/
