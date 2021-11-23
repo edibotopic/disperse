@@ -4,28 +4,28 @@
 
 // let document;
 
-//create an array of phases (may give user option to expand)
+//create an array of phases (will give user option to expand)
 
 phases = ['G','O','W','S'];
-console.log("Phases in use:"+" "+phases);
+// console.log("Phases in use:"+" "+phases);
 
-//create an array of connectives (may give user option to expand)
+//create an array of connectives (will give user option to expand)
 
 connects = ['/','@','×','σ','+'];
-console.log("Connectives in use:"+" "+connects);
+// console.log("Connectives in use:"+" "+connects);
 
-//list cartesian product of binary pairs (4^2) for reference
-phases_paired = ['G','O','W','S'];
+//list cartesian product of binary pairs (4^2) given relation (R)
+// phases_paired = ['G','O','W','S'];
 
-function pairs(){
-    console.log("Possible binary pairs (4^2):")
-    for (let p=0; p<phases.length;p++){
-        for (let s=0; s<phases_paired.length;s++){
-            console.log(phases[p], phases_paired[s]);
-        }
-    }
-};
-pairs();
+// function pairs(){
+//     console.log("Possible binary pairs (4^2):")
+//     for (let p=0; p<phases.length;p++){
+//         for (let s=0; s<phases_paired.length;s++){
+//             console.log(phases[p], phases_paired[s]);
+//         }
+//     }
+// };
+// pairs();
 
 //generate random integer
 function rndInt(max){
@@ -47,7 +47,14 @@ function makeBinaryFormula(count = 3){
         let connective_infix1 = connects[rndInt(max_c1)];
         let formula_binary = (operand_left1 + " " + connective_infix1 + " " + operand_right1);
 
+//log milk emoji to console iff emulsion formula is output (this... is the future)
+        // if (formula_binary==('O / W')){
+        //     console.log('this formula is 🥛')} else {
+        //         console.log('this formula is not 🥛');
+        //     };
+
         return formula_binary;
+
     }
 };
 
@@ -80,10 +87,11 @@ document.getElementById("ternary_generator").addEventListener("click", function(
 }
 );
 
+
 //todo: create infix -> postfix converter
 
 //todo: add quaternary generator
 
-//todo: generate relevant food emoji per formula 🍧
+//todo: generate food emoji per binary formula/atom 🍧🧀🍷
 
 //********************************************************/
