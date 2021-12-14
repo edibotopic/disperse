@@ -28,7 +28,6 @@ Currently, this app allows you to generate binary and ternary systems. So no ice
 - [use-case](#use-case)
 - [limitations](#limitations)
 - [references](#references)
-<!-- - [bugs](#bugs) -->
 - [to-do](#to-do)
 
 ---
@@ -114,15 +113,14 @@ It is a starting point for generating *multi-phase structures* (food or otherwis
 
 ## Use-case
 
-Imagine you are tasked with developing a new food product. You generate a formula as follows:
+Imagine you are tasked with developing a new food product. You generate a formula as follows (in default infix notation):
 
-```math
-G/O+W: infix
-\\
-or
-\\
-/+GOW:prefix
-```
+$$G/O+W$$
+
+or in prefix notation:
+
+$$/+GOW$$
+
 
 This structure will require the following protocol to manufacture:
 
