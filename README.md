@@ -6,7 +6,7 @@ Procedural food structure generator based on the Dispersed System Formalism
 
 This is a simple application for a highly specific use-case: creating random dispersed systems containing multiple phases.
 
-It should work on desktop and mobile, although there is a [slightly annoying bug](#bugs) when scrolling on mobile.
+It should work on desktop and mobile.
 
 ---
 
@@ -28,7 +28,7 @@ Currently, this app allows you to generate binary and ternary systems. So no ice
 - [use-case](#use-case)
 - [limitations](#limitations)
 - [references](#references)
-- [bugs](#bugs)
+<!-- - [bugs](#bugs) -->
 - [to-do](#to-do)
 
 ---
@@ -151,14 +151,16 @@ to be completed...
 - [x] Publish initial version of app
 - [x] Compress media files
 - [x] Give example food formulas
-- [ ] Give example non-food formulas
-- [ ] Add quaternary generator (if only for ice cream)
 - [x] Add illustrated examples of predicates
 - [x] Improve mobile UX and fix bugs
-- [ ] Create a simple logo
-- [ ] Complete description of DSF in readme
 - [x] Add infix-prefix converter (disambiguation)
+- [ ] Add dimensions
 - [ ] Complete the emojififier
+- [ ] Add some kind of recipe suggester
+- [ ] Make design of *About* page less awful (or remove)
+- [ ] Add quaternary generator (if only for ice cream)
+- [ ] Complete description of DSF in readme
+- [ ] Give example non-food formulas
 - [ ] Add academic references for DSF (Hervé's papers)
 - [ ] Apologise to all programmers for my bad habits
 

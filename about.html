@@ -24,59 +24,60 @@
             
         <h2>About</h2>
             
-        <blockquote>The Dispersed System Formalism (DSF) was developed by the French scientist
+        <p style="color: white;">The Dispersed System Formalism (DSF) was developed by the French scientist
         <a href="https://en.wikipedia.org/wiki/Herv%C3%A9_This">Hervé This</a> as a method to
-        describe food systems based on their constituent phases.
+        describe food systems based on their constituent phases.</p>
         
         <br><br>
         
-        <a href=index.html>The Disperse tool</a> uses
+        <p style="color: white;"><a href=index.html>The Disperse tool</a> uses
         pseudo-random number generators to suggest
         DSF formulas containing the following food phases:
-        <br><br>
-        <small>
+        <ul style="color: white;">
             <li>gas (G)</li>
             <li>oil (O)</li>
             <li>solid (S)</li>
             <li>water (W)</li>
-        </small>
+        </ul>
+        </p>
         
-        <br><br>
-        The phases are taken to be associated <i>topologically</i> by a set of operators.
+        <p style="color: white;">The phases are taken to be associated <i>topologically</i> by a set of operators.
         Here, the operators used are:
         <br><br>
-        <small>
-            <li><i>dispersed in</i> (/)</li>
-            <li><i>included in</i> (@)</li>
-            <li><i>superposed on</i> (σ)</li>
-            <li><i>bicontinuous with</i> (×)</li>
-            <li><i>in addition to</i> (+)</li>
-        </small>
-        
-        <br><br>
+        <ul style="color: white;">
+            <li><i>dispersed-in</i> (/)</li>
+            <li><i>included-in</i> (@)</li>
+            <li><i>superposed-on</i> (σ)</li>
+            <li><i>bicontinuous-with</i> (×)</li>
+            <li><i>in-addition-to</i> (+)</li>
+        </ul></p>
+
+        <p style="color: white;">
         In the original DSF papers an algorithm written with the proprietary software Maple was presented
         to generate lists of valid DSF formulas. <a href="https://github.com/edibotopic/disperse"><span style="font-family: Frijole; color: #13cffe;">disperse</span></a> is written in 
         javascript and is designed to provide a more convenient method of procedurally
-        generating food formulas in the browser (for free).
+        generating food formulas in the browser (for free).</p>
         
         <br><br>
+        <p style="color: white;">
         On the <a href="index.html">Binary</a> page formulas containing two phases can be generated. A formula
         can then be "emojified" into an example food system (currently only possible for a limited set of formulas).
-        For example O/W is an oil-in-water emulsion or in emoji: 🥛.
+        For example O/W is an oil-in-water emulsion or in emoji:</p><span style="font-size: xx-large;">🥛</span>
 
         <br><br>
+        <p style="color: white;">
         On the <a href="tern.html">Ternary</a> page formulas containing three phases can be generated. This introduces
         some ambiguity, as O+G/W can be interpreted as (O+G)/W or O+(G/W). The ternary formulas generated can be "disambiguated"
         by converting the default <a href="https://en.wikipedia.org/wiki/Infix_notation#:~:text=Infix%20notation%20is%20the%20notation,plus%20sign%20in%202%20%2B%202.">infix notation</a>
-        to <a href="https://en.wikipedia.org/wiki/Polish_notation">prefix notation</a>.
+        to <a href="https://en.wikipedia.org/wiki/Polish_notation">prefix notation</a>.</p>
         
         <br><br>
-
+        <p style="color: white;">
         Thus, instead of writing O+G/W we can write +/OGW, which is read as "oil dispersed-in gas in-addition-to water".
-        On the other hand, the formula O/G+W would convert to /+OGW, meaning "oil and gas both dispersed in water".
-        
+        On the other hand, the formula O/G+W would convert to /+OGW, meaning "oil and gas both dispersed in water".</p>
+        <p style="color: white;">
         For more detailed background visit the Github page for <a href="https://github.com/edibotopic/disperse"><span style="font-family: Frijole; color: #13cffe;">disperse</span></a>
-    </blockquote>
+    </p>
 
     <small style="font-family: Frijole; color: white;">©2021 edibotopic (MIT license) </small>
     

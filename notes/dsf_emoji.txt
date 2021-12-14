@@ -1,4 +1,4 @@
-Idea 1: associate each DSF formula with a representative emoji...
+Idea 1: associate each DSF formula with a representative emoji. For dispersion predicate:
 
 possible_pairs = [
     G / G = 🔳;
