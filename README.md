@@ -6,7 +6,7 @@ Procedural food structure generator based on the Dispersed System Formalism
 
 This is a simple application for a highly specific use-case: creating random dispersed systems containing multiple phases.
 
-It should work on desktop and mobile.
+It should work on desktop and mobile, although there is a slightly annoying visual bug when scrolling in the about page on mobile (transparent coloured bar appears for a moment).
 
 ---
 
