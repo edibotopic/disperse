@@ -1,30 +1,26 @@
-Plan: associate each DSF formula with a representative emoji...
+Idea 1: associate each DSF formula with a representative emoji...
 
 possible_pairs = [
-    G G
-    G O
-    G W
-    G S
+    G / G = 🔳;
+    G / O = 🍺;
+    G / W = 🍺;
+    G / S = 🍞;
 
-    O G
-    O O
-    O W
-    O S
+    O / G = ☁;
+    O / O = 🛢;
+    O / W = 🥛;
+    O / S = 🥑;
 
-    W G
-    W O
-    W W
-    W S
+    W / G = ☁;
+    W / O = 🧈;
+    W / W = 🍷;
+    W / S = 🧀;
 
-    S G
-    S O
-    S W
-    S S
+    S / G = 🧂;
+    S / O = 🏺🥗;
+    S / W = 🧃;
+    S / S = 🍪;
 ];
-
----
-
-Numbers: quite a few combinations
 
 4^2 = 16 possible pairs for relation (R)
 16*5 = 80 possible pairs with 5 predicates
@@ -33,32 +29,31 @@ Some combinations are redundant (e.g., W/W = W,  S + O = {} )
 
 So real n < 80
 
----
-
-Emojis: examples might include...
-
-emojis = [
-    gas_only = 🔳;
-    liquid_foam = 🍺;
-    solid_foam = 🍞;
-    oil_only = 🛢;
-    aerosol = ☁;
-    water_oil = 🧈;
-    oil_water = 🥛;
-    water_only = 🍷;
-    gel_stat = 🧀;
-    gel_dyna = 🥝;
-    solid_only = 🧊;
-    solid_bulk = 🧂;
-
-]
-
----
-
-Examples:
+Combining emojis...
 
 W/W = 🍷 (water only as ethanol is not dissolved rather than suspended)
 W/S = 🧀 (a gel such as cheese, with water dispersed in a solid matrix)
-w/s/w = 🧀/🍷 (gelled particles dispersed in a an aqueous dispersant)
+W/S/W = 🧀/🍷 (gelled particles dispersed in a an aqueous dispersant)
+
+---
+
+Idea 2: formulae trigger information around procedures, nutrition and/or flavour
+
+result: O/W
+recommendation: to dissolve oil in water a surfactant is often needed
+nutrition: the presence of oil and water phases allow both vitamin C and D to be added
+flavour: extract spices in the oil and dissolver sugars in the water before mixing
+
+---
+
+Idea 3: disambiguate formulae
+
+result: G+O/W
+disambiguate: /+GOW
+meaning: gas in addition to oil both dispersed in water
+
+result: G+O @ S/W
+disambiguate: @+GO/SW
+meaning: gas in addition to oil included within a solid in water dispersion
 
 ---

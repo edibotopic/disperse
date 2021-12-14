@@ -89,6 +89,12 @@ was itself contained within a shell of some aqueous material we could write:
 (G@W)/S
 ```
 
+This app provides a convenient means to generate valid DSF formulas for [binary](https://edibotopic.github.io/disperse/) or [ternary](https://edibotopic.github.io/tern/) combinations of phases.
+
+The binary generator includes an <kbd>emojify</kbd> button that generates an example of the generated formula.
+
+The ternary generator includes a <kbd>disambiguate</kbd> that converts from infix notation (more ambiguous) to postfix notation (less ambiguous).
+
 ## Applications
 
 There are two distinct uses of DSF:
@@ -111,34 +117,34 @@ It is a starting point for generating *multi-phase structures* (food or otherwis
 Imagine you are tasked with developing a new food product. You generate a formula as follows:
 
 ```math
-G/O/W
+G/O+W: infix
+\\
+or
+\\
+/+GOW:prefix
 ```
 
 This structure will require the following protocol to manufacture:
 
-1. Prepare a solution of some solute (e.g., sugar, protein)
-2. Whip air into oil (e.g., using a high-shear mixer)
-3. Emulsify aerated oil into solution prepared in 1. (e.g., again using a mixer)
+1. Prepare a solution **W** of some solutes (e.g., sugar, protein)
+2. Whip air **G** into solution (e.g., using a high-shear mixer)
+3. Emulsify oil **O** into solution (e.g., again using a mixer)
 
 The inclusion of each phase presents various opportunities:
 
 - Solvents can dissolve different kinds of molecules (vitamins, flavours, aromas)
 - Textures can develop through phase dispersion (mouthfeel associated with emulsions)
-- Calories can be reduced by creating a volume fraction comprised of air (calorie-reduced candy)
+- Calories can be reduced by creating a volume fraction comprised of air (see ice-cream)
 
 ## Limitations
 
-This app is not a full implementation of the ideas presented in the DSF literature. Some authors have suggested how quantitative data can be included in the formulas. However, my view is that the primary novelty of DSF is as a *qualitative tool* that can generate *possible structures*.
+This app is not a full implementation of the ideas presented in the DSF literature. Some authors have suggested how quantitative data can be included in the formulas. However, my view is that the primary novelty of DSF is as a *qualitative tool* that can generate *possible structures*. This implementation (and any future versions) will focus on these aspects of DSF.
 
-This implementation (and any future versions) will focus on these aspects of DSF.
+DSF allows for dimensional information to be included in formulas, such that the the *n*-dimensionality of each phase in 3-dimensional space can be signified. This is trivial to implement but I have not got around to it.
 
 ## References
 
 to be completed...
-
-## Bugs
-
-When scrolling on an Android device the background colour (purple tint) momentarily appears over the background image. I haven't tested this on other devices but I believe it is a common issue with background images on mobile browsers. I like my subtly pulsing neon micrograph too much to change it right now.
 
 ## To-do
 
@@ -146,17 +152,31 @@ When scrolling on an Android device the background colour (purple tint) momentar
 - [x] Compress media files
 - [x] Give example food formulas
 - [ ] Give example non-food formulas
-- [x] Fix directory structure
-- [x] Refactor function/variable names
 - [ ] Add quaternary generator (if only for ice cream)
 - [x] Add illustrated examples of predicates
-- [ ] Improve mobile UX and fix bugs
+- [x] Improve mobile UX and fix bugs
 - [ ] Create a simple logo
 - [ ] Complete description of DSF in readme
-- [ ] Add infix-postfix converter (disambiguation)
-- [ ] Link generated formulas w/ examples (emojification)
+- [x] Add infix-prefix converter (disambiguation)
+- [ ] Complete the emojififier
 - [ ] Add academic references for DSF (Hervé's papers)
 - [ ] Apologise to all programmers for my bad habits
+
+## Releases
+
+### 0.1.0
+
+- Emojifier added
+- Disambiguator added
+- UX improvements (menus)
+- Fixed bugs
+- Initial refactoring
+
+### 0.0.1
+
+- Initial release
+- Binary formula generator
+- Ternary formula generator
 
 ## Contributions
 
