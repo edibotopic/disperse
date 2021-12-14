@@ -90,9 +90,9 @@ was itself contained within a shell of some aqueous material we could write:
 
 This app provides a convenient means to generate valid DSF formulas for [binary](https://edibotopic.github.io/disperse/) or [ternary](https://edibotopic.github.io/tern/) combinations of phases.
 
-The binary generator includes an <kbd>emojify</kbd> button that generates an example of the generated formula.
+The binary generator includes an <kbd>emojify</kbd> button that generates an example of the generated formula. **Note:** only a small subset of the binary formula can currently be converted into emojis. *This is a work-in-progress*.
 
-The ternary generator includes a <kbd>disambiguate</kbd> that converts from infix notation (more ambiguous) to postfix notation (less ambiguous).
+The ternary generator includes a <kbd>disambiguate</kbd> that converts from infix notation (more ambiguous) to postfix notation (less ambiguous). **Note:** the algorithm for disambiguating the formulas is very simple - it merely pushes the operators to the left side of a given formula. The resultant formula is clear and unambiguous (if one can read prefix notation); however, a side effect is that the semantics of the infix and prefix formulas can deviate. This is not a problem *per se*, if one wants to simply generate an unambiguous formula.
 
 ## Applications
 
