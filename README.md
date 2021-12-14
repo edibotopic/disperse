@@ -115,12 +115,11 @@ It is a starting point for generating *multi-phase structures* (food or otherwis
 
 Imagine you are tasked with developing a new food product. You generate a formula as follows (in default infix notation):
 
-$$G/O+W$$
+`G/O+W`
 
 or in prefix notation:
 
-$$/+GOW$$
-
+`/+GOW`
 
 This structure will require the following protocol to manufacture:
 
