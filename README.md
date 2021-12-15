@@ -92,7 +92,7 @@ This app provides a convenient means to generate valid DSF formulas for [binary]
 
 The binary generator includes an <kbd>emojify</kbd> button that generates an example of the generated formula. **Note:** only a small subset of the binary formula can currently be converted into emojis. *This is a work-in-progress*.
 
-The ternary generator includes a <kbd>disambiguate</kbd> that converts from infix notation (more ambiguous) to postfix notation (less ambiguous). **Note:** the algorithm for disambiguating the formulas is very simple - it merely pushes the operators to the left side of a given formula. The resultant formula is clear and unambiguous (if one can read prefix notation); however, a side effect is that the semantics of the infix and prefix formulas can deviate. This is not a problem *per se*, if one wants to simply generate an unambiguous formula.
+The ternary generator includes a <kbd>disambiguate</kbd> that converts from infix notation (more ambiguous) to postfix notation (less ambiguous). **Note:** the algorithm for disambiguating the formulas is very simple - it merely pushes the operators to the left side of a given formula. The resultant formula is clear and unambiguous (if one can read prefix notation); however, a side effect is that valid interpretations of the infix and prefix formulas can deviate from each other. This is not a problem in itself, if one wants to simply generate an unambiguous formula. In future iterations this will be refined further.
 
 ## Applications
 
@@ -151,6 +151,7 @@ to be completed...
 - [x] Add illustrated examples of predicates
 - [x] Improve mobile UX and fix bugs
 - [x] Add infix-prefix converter (disambiguation)
+- [ ] Harmonise infix and prefix formulas (better disambiguation)
 - [ ] Add dimensions
 - [ ] Complete the emojififier
 - [ ] Add some kind of recipe suggester

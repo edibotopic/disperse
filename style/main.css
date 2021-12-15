@@ -9,6 +9,12 @@
   /* display: block; */
 }
 
+.about {
+
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 body {
   height: 100%;
   overflow: hidden;
@@ -21,6 +27,7 @@ body {
   text-align: center;
   animation: col_shift 8s infinite alternate;
 }
+
 
 @keyframes col_shift {
   from {
@@ -59,6 +66,15 @@ p {
   font-size: x-large;
   font-weight: bold;
 
+}
+
+  
+li {
+  font-size: 22px;
+  margin-left: 10px;
+  list-style-type: circle;
+  list-style-position: inside;
+  display: list-item;
 }
 
 em {
