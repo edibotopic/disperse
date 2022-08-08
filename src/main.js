@@ -8,7 +8,7 @@ const phases = ['G','O','W','S'];
 
 //create an array of connectives (will give user option to expand)
 
-const connects = ['/','@','×','σ','+'];
+const connects = ['/','@','×','σ']; //NOTE: removed + as does not yield meaningful formulae in binary
 
 //generate random integer
 function rndInt(max){

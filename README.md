@@ -92,7 +92,7 @@ This app provides a convenient means to generate valid DSF formulas for [binary]
 
 The binary generator includes an <kbd>emojify</kbd> button that generates an example of the generated formula. **Note:** only a small subset of the binary formula can currently be converted into emojis. *This is a work-in-progress*.
 
-The ternary generator includes a <kbd>disambiguate</kbd> that converts from infix notation (more ambiguous) to postfix notation (less ambiguous). **Note:** the algorithm for disambiguating the formulas is very simple - it merely pushes the operators to the left side of a given formula. The resultant formula is clear and unambiguous (if one can read prefix notation); however, a side effect is that valid interpretations of the infix and prefix formulas can deviate from each other. This is not a problem in itself, if one wants to simply generate an unambiguous formula. In future iterations this will be refined further.
+The ternary generator includes a <kbd>disambiguate</kbd> that converts from infix notation (more ambiguous) to postfix notation (less ambiguous). The resultant formula is clear and unambiguous (if one can read postfix notation). 
 
 ## Applications
 
@@ -117,9 +117,9 @@ Imagine you are tasked with developing a new food product. You generate a formul
 
 `G/O+W`
 
-or in prefix notation:
+or in postfix notation:
 
-`/+GOW`
+`GO/W+`
 
 This structure will require the following protocol to manufacture:
 
@@ -150,19 +150,25 @@ to be completed...
 - [x] Give example food formulas
 - [x] Add illustrated examples of predicates
 - [x] Improve mobile UX and fix bugs
-- [x] Add infix-prefix converter (disambiguation)
-- [ ] Harmonise infix and prefix formulas (better disambiguation)
-- [ ] Add dimensions
-- [ ] Complete the emojififier
+- [x] Add infix-postfix converter (disambiguation)
+- [x] Harmonise infix and postfix formulas (better disambiguation)
+- [ ] Add unary operators
+- [ ] Complete the emojififier or replace with Canvas-based diagrams
+- [ ] Colour the operands and operators for clarity
 - [ ] Add some kind of recipe suggester
-- [ ] Make design of *About* page less awful (or remove)
 - [ ] Add quaternary generator (if only for ice cream)
 - [ ] Complete description of DSF in readme
 - [ ] Give example non-food formulas
 - [ ] Add academic references for DSF (Hervé's papers)
-- [ ] Apologise to all programmers for my bad habits
 
 ## Releases
+
+### 0.2.0
+
+- Better infix-postfix converter
+- Removed '+' from binary formula generator
+- Reworded some sections in readme and about page
+- Added to the to-do list
 
 ### 0.1.0
 
@@ -177,8 +183,3 @@ to be completed...
 - Initial release
 - Binary formula generator
 - Ternary formula generator
-
-## Contributions
-
-I don't expect this app to have a wide user base. If you have any suggestions or questions you can open an issue.
-Hopefully by then I will have sufficient competence using GitHub to respond appropriately.

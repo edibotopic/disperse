@@ -191,3 +191,7 @@ a:active {
     text-align: left;
   }
 }
+
+#operator {
+    colour: green;
+}
